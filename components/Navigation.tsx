@@ -29,7 +29,10 @@ export default function Navigation() {
             </div>
           </div>
           <div className="md:hidden">
-            <button className="text-gray-700 hover:text-amber-600 focus:outline-none focus:text-amber-600">
+            <button 
+              onClick={() => setIsOpen(!isOpen)}
+              className="text-gray-700 hover:text-amber-600 focus:outline-none focus:text-amber-600"
+            >
               <svg className="h-6 w-6" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
                 <path d="M4 6h16M4 12h16M4 18h16"></path>
               </svg>
